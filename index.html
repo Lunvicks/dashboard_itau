@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Performance de Cobrança</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+</head>
+<body>
+
+<div class="header">
+  <div>
+    <h1>Performance de Cobrança</h1>
+    <p>Análise de acionamentos — equipe de cobrança</p>
+  </div>
+  <span class="badge">Fato_Acionamentos</span>
+</div>
+
+<div class="kpis">
+  <div class="kpi">
+    <div class="kpi-label">Total de Acionamentos</div>
+    <div class="kpi-value">577</div>
+    <div class="kpi-sub">Todos os canais</div>
+  </div>
+  <div class="kpi">
+    <div class="kpi-label">Operadores Ativos</div>
+    <div class="kpi-value">6</div>
+    <div class="kpi-sub">IDs distintos</div>
+  </div>
+  <div class="kpi">
+    <div class="kpi-label">Melhor Resultado</div>
+    <div class="kpi-value small">Promessa de pagamento</div>
+    <div class="kpi-sub">194 acionamentos</div>
+  </div>
+  <div class="kpi">
+    <div class="kpi-label">Canal Principal</div>
+    <div class="kpi-value small">WhatsApp</div>
+    <div class="kpi-sub">38% do total</div>
+  </div>
+</div>
+
+<div class="charts-grid">
+  <div class="card">
+    <div class="card-title">Acionamentos por Operador</div>
+    <div class="card-sub">Contagem por ID do operador</div>
+    <div style="position:relative;width:100%;height:220px;">
+      <canvas id="chart-op" role="img" aria-label="Acionamentos por operador">Acionamentos por operador.</canvas>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-title">Distribuição por Canal</div>
+    <div class="card-sub">Participação de cada canal</div>
+    <div class="legend" id="leg-canal"></div>
+    <div style="position:relative;width:100%;height:185px;">
+      <canvas id="chart-canal" role="img" aria-label="Distribuição por canal">Distribuição por canal.</canvas>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-title">Resultados de Acionamento</div>
+    <div class="card-sub">Total por tipo de resultado</div>
+    <div style="position:relative;width:100%;height:240px;">
+      <canvas id="chart-res" role="img" aria-label="Resultados de acionamento">Resultados.</canvas>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-title">Evolução Temporal</div>
+    <div class="card-sub">Acionamentos e canais por data</div>
+    <div class="legend" id="leg-tempo"></div>
+    <div style="position:relative;width:100%;height:210px;">
+      <canvas id="chart-data" role="img" aria-label="Evolução por data">Evolução por data.</canvas>
+    </div>
+  </div>
+</div>
+
+<div class="footer">Dashboard de Performance de Cobrança — conecte sua fonte real no Power BI para valores ao vivo</div>
+
+<script src="script.js"></script>
+</body>
+</html>
