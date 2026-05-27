@@ -20,11 +20,5 @@ Você pode visualizar o dashboard em funcionamento online através do link abaix
 - **JavaScript (ES6+):** Lógica e interatividade.
 - **Chart.js (v4.4.1):** Biblioteca para renderização de gráficos de alta performance.
 
-## 💻 Como rodar localmente
-Se você quiser rodar este projeto na sua máquina:
-1. Clone o repositório: 
-   `git clone https://github.com/Lunvicks/dashboard_itau.git`
-2. Abra o arquivo `index.html` no seu navegador preferido.
-
 ---
-*Desenvolvido por Lunvicks*
+*Desenvolvido por Vitória Silva*
